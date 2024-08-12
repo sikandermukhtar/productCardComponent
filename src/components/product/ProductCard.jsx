@@ -64,7 +64,7 @@ function ProductCard({
                         <p className='ml-28 md:ml-0'>⭐⭐⭐⭐⭐<span
                             className='mx-2 underline underline-offset-2'>{rating}</span><span>({reviewCount})</span></p>
                     </div>
-                    <p className='ml-28 mb-6 md:ml-0 capitalize text-gray-700 cursor-pointer text-md underline hover:no-underline underline-offset-2 hover:text-black'
+                    <p className='mx-auto mb-6 md:ml-0 capitalize text-gray-700 cursor-pointer text-md underline hover:no-underline underline-offset-2 hover:text-black'
                     onClick={showReviews}
                     >
                         {isReviewTabOpen ? 'Hide Reviews' : 'See Reviews'}
@@ -73,10 +73,10 @@ function ProductCard({
 
             </div>
             {isReviewTabOpen &&
-                <div ref={reviewRef} className='w-96 md:w-2/3 mx-auto p-8 md:px-8 py-8 bg-gray-50 rounded-xl border border-gray-200'>
+                <div ref={reviewRef} className='w-96 md:w-2/3 mx-auto mb-10 p-8 md:px-8 py-8 bg-gray-50 rounded-xl border border-gray-200'>
                     <div className='flex flex-col gap-y-4'>
                         {reviews.map((review, index) => (
-                            <div key={index} className='flex flex-col gap-y-2'>
+                            <div key={index} className='flex flex-col gap-y-2 border-b pb-2'>
                                 <p className='flex justify-start normal-case text-md text-red-500'>{review.reviewerName}
                                     <span className='flex ml-10'>
                                         {Array.from({length : review.starCount}).map((_, index) =>(
