@@ -1,6 +1,6 @@
 
 import './App.css'
-import ProductCard from "./components/ProductCard.jsx";
+import ProductCard from "./components/product/ProductCard.jsx";
 import Prime_Metamoon_ProductDetail_front_2000x from './assets/Prime_Metamoon_ProductDetail_front_2000x.webp';
 import Prime_Metamoon_ProductDetail_side_600x from './assets/Prime_Metamoon_ProductDetail_side_600x.webp';
 import Prime_Metamoon_ProductDetail_back_600x from './assets/Prime_Metamoon_ProductDetail_back_600x.webp';
